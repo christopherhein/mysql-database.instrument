@@ -117,11 +117,11 @@ class Database {
 	/* Select
       Select items in the table
   */
-	public function select($table, $id, $where = 'id') {
+	public function select($table, $id, $where = 'id', $field = '*') {
 		if($table != NULL) {
 			$this->connect();
 			if($where != 'id') { $id = "'".$id."'"; }
-			$sql = "SELECT * FROM ".$this->_database.".".$table." WHERE $where = $id;";
+			$sql = "SELECT ".$field." FROM ".$this->_database.".".$table." WHERE $where = $id;";
 			return $this->query($sql, 1);
 			$this->disconnect();
 		}
