@@ -1,0 +1,31 @@
+#!/usr/bin/php
+<?php
+/**
+* Orchestra Mysql-Database
+*
+* Intall script this is run from the cmd line to fully install this module into your orchestra application.
+*
+* Licensed under the MIT license.
+*
+* @category   Orchestra
+* @copyright  Copyright (c) 2010, Christopher Hein
+* @license    http://orchestramvc.chrishe.in/license
+* @version    Release: 0.0.1:beta
+* @link       http://orchestramvc.chrishe.in/
+*
+*/
+
+$path = getcwd();
+$name = "mysql-database";
+$drivers = "/lib/drivers/";
+$files = array(
+	'mysql.php'
+);
+
+	// Variables
+if($argv[1] == "play") {
+	
+	copy($path."/instruments/".$name."/files/".$files['0'], $path.$drivers.$files['0']);
+	echo "CREATED :: ".$files['0']."\n";
+	
+}

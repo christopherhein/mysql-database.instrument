@@ -1,0 +1,38 @@
+<?php
+/**
+* Orchestra Settings
+*
+* Used for filing on the OrchestraMVC website.
+*
+* Licensed under the MIT license.
+*
+* @category   Orchestra
+* @copyright  Copyright (c) 2010, Christopher Hein
+* @license    http://orchestramvc.chrishe.in/license
+* @version    Release: 0.0.1:beta
+* @link       http://orchestramvc.chrishe.in/
+*
+*/
+
+$instrument = array(
+	'title' 				=> 'mysql-database',
+	'teaser'				=> 'Use MySql as a primary Datastore',
+	'description'		=> 'This instrument adds the mysql driver to you application so that any connection you make to the database is through mysql.'
+	'category'			=> 'database',
+	'copyright'			=> 'Christopher Hein',
+	'license'				=> 'MIT',
+	'version'				=> '0.0.1',
+	'link'					=> 'http://orchestramvc.chrishe.in/instruments/mysql-database',
+	'author'				=> 'Christopher Hein',
+	'author-link'		=> 'http://chrishe.in',
+	'author-email'	=> 'me@chrishe.in'
+	'files'					=> array(
+												'README',
+												'install',
+												'mysql-database.php',
+												'settings.instrument',
+												'./docs/mysql-database.html',
+												'./files/mysql.php',
+												'./images/',
+											)
+);
