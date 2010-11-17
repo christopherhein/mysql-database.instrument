@@ -1,4 +1,36 @@
-/* ----------------------- */
+--------------------------------------
+
 Mysql-Database Instrument
 
-this allows to use MySql as your primary datastore.
+To finish the installation and use this instrument you have one more step:
+
+  1) Setup Your database connection file example:
+  
+      $db['development'] = array(
+      	'type' 			=> 'mysql',
+      	'server'		=> 'localhost',
+      	'user'			=> 'root',
+      	'password'	=> 'root',
+      	'name'			=> 'orchestra_development'
+      );
+
+      $db['test'] = array(
+      	'type' 			=> 'mysql',
+      	'server'		=> 'localhost',
+      	'user'			=> 'root',
+      	'password'	=> 'root',
+      	'name'			=> 'orchestra_test'
+      );
+
+      $db['production'] = array(
+      	'type' 			=> 'mysql',
+      	'server'		=> 'localhost',
+      	'user'			=> 'root',
+      	'password'	=> 'root',
+      	'name'			=> 'orchestra_production'
+      );
+      
+      
+Enjoy!
+
+--------------------------------------

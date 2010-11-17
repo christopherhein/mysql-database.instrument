@@ -1,1 +1,33 @@
-This is an Instrument File for using MySQL in for Orchestra Applications
+/**
+* Orchestra Mysql-Database 
+*
+* Add your twitter feed to your Orchestra Apps
+*
+* Licensed under the MIT license.
+*
+* @category   Orchestra
+* @copyright  Copyright (c) 2010, Christopher Hein
+* @license    http://orchestramvc.chrishe.in/license
+* @version    Release: 0.0.1:beta
+* @link       http://orchestramvc.chrishe.in/
+*
+*/
+
+------------------------------------------------------
+What:
+This is an instrument file for using Mysql as your primary datastore for your Orchestra Apps.
+This adds a full REST mapper for modeling your mysql objects in Orchestra.
+
+Installation:
+First you must have already installed the sys_orchestra (https://github.com/christopherhein/system-orchestra-mvc)
+If that is installed use:
+
+  $ instrument pull mysql-database
+  
+This with build the instrument locally in /usr/local/orchestra/instruments/ once that is complete you can use:
+
+  $ instrument install mysql-database
+  
+from the root directory of any Orchestra App and it will install all the necessary files, plus walk you through any additional steps.
+
+Enjoy!
